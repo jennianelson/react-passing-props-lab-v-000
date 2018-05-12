@@ -11,7 +11,7 @@ const FilteredFruitList = ({filter, fruit}) => {
 
 FilteredFruitList.defaultProps = {
   fruit: [],
-  filter: "all"
+  filter: null
 }
 
 export default FilteredFruitList;

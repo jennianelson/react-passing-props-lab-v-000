@@ -16,8 +16,8 @@ const FruitBasket = ({updateFilterCallback, filters, currentFilter, fruit}) => {
 FruitBasket.defaultProps = {
   fruit: [],
   filters: [],
-  currentFilter: "all",
-  updateFilterCallback: "",
+  currentFilter: null,
+  updateFilterCallback: () => {},
 }
 
 export default FruitBasket;
