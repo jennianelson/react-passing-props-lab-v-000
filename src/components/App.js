@@ -27,12 +27,12 @@ class App extends React.Component {
   fetchItems = () => {
     fetch('/api/fruit')
       .then(response => response.json())
-      .then(items => this.setState({ items }));
+      .then(fruit => this.setState({ fruit }));
   }
 
   handleFilterChange = event => {
     console.log('new filter: ', event.target.value);
-    this.setState({ selectedFilter: event.target.value });
+    this.setState({ currentFilter: event.target.value });
   }
 
   render() {

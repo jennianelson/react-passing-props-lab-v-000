@@ -13,7 +13,7 @@ const Filter =({handleChange, filters}) => {
 
 Filter.defaultProps = {
   handleChange: "",
-  filters: "",
+  filters: [],
 }
 
 export default Filter;
